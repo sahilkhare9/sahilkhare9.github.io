@@ -10,8 +10,7 @@ window.onscroll = function () {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
-
-}
+};
 
 let body = document.querySelector("body");
 let navBar = document.querySelector(".navbar");
@@ -23,14 +22,14 @@ menuBtn.onclick = function () {
   menuBtn.style.pointerEvents = "none";
   body.style.overflow = "hidden";
   scrollBtn.style.pointerEvents = "none";
-}
+};
 cancelBtn.onclick = function () {
   navBar.classList.remove("active");
   menuBtn.style.opacity = "1";
   menuBtn.style.pointerEvents = "auto";
   body.style.overflow = "auto";
   scrollBtn.style.pointerEvents = "auto";
-}
+};
 
 let navLinks = document.querySelectorAll(".menu li a");
 for (var i = 0; i < navLinks.length; i++) {
@@ -40,31 +39,32 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyW0ZgOaGQFImaaiJF7cFA2vhzud9EWxsytNVWg3q8oufwE2v7HQ46QNDoRN2t5w35T/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => {
-      msg.innerHTML = "Message sent successfully"
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyW0ZgOaGQFImaaiJF7cFA2vhzud9EWxsytNVWg3q8oufwE2v7HQ46QNDoRN2t5w35T/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Message sent successfully";
       setTimeout(function () {
-        msg.innerHTML = ""
-      }, 5000)
-      form.reset()
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
     })
-    .catch(error => console.error('Error!', error.message))
-})
-document.querySelector('button').addEventListener('click', function darkMode() {
+    .catch((error) => console.error("Error!", error.message));
+});
+document.querySelector("button").addEventListener("click", function darkMode() {
   var element = document.body;
   element.classList.toggle("dark-theme");
-  const icon = this.querySelector('i');
+  const icon = this.querySelector("i");
 
-  if (icon.classList.contains('fa-moon-stars')) {
-    icon.classList.remove('fa-moon-stars');
-    icon.classList.add('fa-sun-bright');
+  if (icon.classList.contains("fa-moon-stars")) {
+    icon.classList.remove("fa-moon-stars");
+    icon.classList.add("fa-sun-bright");
   } else {
-    icon.classList.remove('fa-sun-bright');
-    icon.classList.add('fa-moon-stars');
+    icon.classList.remove("fa-sun-bright");
+    icon.classList.add("fa-moon-stars");
   }
 });
