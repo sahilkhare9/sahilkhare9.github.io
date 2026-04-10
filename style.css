@@ -6,7 +6,7 @@
   --background-color: #F9FAFB;
   --text-color: #212121;
   --surface-color: #FFFFFF;
-  --shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  --shadow: 0px 6px 12px rgba(0,0,0,0.15);
 }
 
 .dark-theme {
@@ -15,7 +15,7 @@
   --background-color: #121212;
   --text-color: #FFFFFF;
   --surface-color: #1E1E1E;
-  --shadow: 0px 4px 6px rgba(255,255,255,0.1);
+  --shadow: 0px 6px 12px rgba(255,255,255,0.1);
 }
 
 * {
@@ -30,18 +30,6 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
-  border-radius: 12px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-color);
 }
 
 /* Navbar */
@@ -98,12 +86,21 @@ nav .navbar .menu a:hover {
   color: var(--secondary-color);
 }
 
+/* Headings */
+section .title span {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 6px;
+}
+
 /* Buttons */
 .button, .btn1 button {
   background: var(--primary-color);
   color: #fff;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -113,7 +110,7 @@ nav .navbar .menu a:hover {
 }
 .button:hover, .btn1 button:hover {
   background: var(--secondary-color);
-  transform: translateY(-2px);
+  transform: scale(1.05);
 }
 
 /* Cards (Services, Skills, Contact) */
