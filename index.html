@@ -1,266 +1,564 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Sahil Valmiki</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
-  <link rel="icon" href="images/Icon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Basic -->
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sahil Valmiki | Portfolio</title>
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#8b5cf6" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1020" />
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio website of Sahil Valmiki - Frontend Developer and UI Designer" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="scroll-button">
-    <a href="#home"><i class="fa-duotone fa-arrow-up"></i></a>
+  <!-- Scroll Top -->
+  <div class="scroll-top">
+    <a href="#home">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
   </div>
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#"><i class="fa-duotone fa-s"></i>ahil.</a></div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#mywork">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
 
-        <div class="cancel-btn">
-          <i class="fa-duotone fa-xmark"></i>
-        </div>
-      </ul>
-      <div class="icons">
-        <button><i class="fa-duotone fa-moon-stars"></i></button>
+  <!-- ================= NAVBAR ================= -->
+
+  <nav id="navbar">
+    <div class="container navbar">
+
+      <div class="logo">
+        <a href="#home">Sahil.</a>
       </div>
-    </div>
-    <div class="menu-btn">
-      <i class="fa-duotone fa-bars"></i>
+
+      <ul class="menu">
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#work">Work</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+      <div class="nav-actions">
+
+        <!-- Theme Button -->
+        <button class="theme-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+
     </div>
   </nav>
+
+  <!-- ================= HERO ================= -->
+
   <section class="home" id="home">
-    <div class="home-content">
-      <div class="text">
-        <div class="text-one">Hello,</div>
-        <div class="text-two">I'm Sahil Valmiki</div>
-        <div class="text-three"><span class="typing-text"></span></div>
-        <div class="text-four">From Gwalior</div>
-      </div>
-      <a href="#" class="button">Hire Me</a>
-    </div>
-  </section>
-  <section class="about" id="about">
-    <div class="content">
-      <div class="title"><span>About Me</span></div>
-      <div class="about-details">
-        <div class="left">
-          <img src="images/about.jpg">
+
+    <div class="container hero-wrapper">
+
+      <!-- LEFT -->
+      <div class="hero-content">
+
+        <p class="hello-text">
+          Hello, I'm
+        </p>
+
+        <h1>
+          Sahil Valmiki
+        </h1>
+
+        <h2>
+          <span class="typing-text"></span>
+        </h2>
+
+        <p class="hero-description">
+
+          I design and build modern,
+          responsive and user-focused
+          websites with clean UI and
+          smooth experiences.
+
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#contact" class="btn primary-btn">
+            Hire Me
+          </a>
+
+          <a href="images/Sahil_CV.pdf" target="_blank" class="btn secondary-btn">
+            Download CV
+          </a>
+
         </div>
-        <div class="right">
-          <div class="topic">Designing Is My Passion</div>
-          <p>Hi, I am Sahil Valmiki a Full-Stack developer based in Gwalior, India.
-            I am doing "Becholar of Computer Application" course from ITM University.</p>
-          <p>I am very passionate about improving my coding skills & developing applications & websites.
-            I build WebApps and Websites.</p>
-          <p>I love to build Full-Stack clones. I prefer to keep learning, continue challenging myself, and do
-            interesting
-            things that matter.</p>
-          <div class="box-container">
-            <div class="box">
-              <p><span> Age: </span> 21</p>
-              <p><span> Phone : </span> +91 939-900-6710</p>
+
+        <!-- Social -->
+        <div class="social-links">
+
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-image">
+
+        <img src="images/home.png" alt="Sahil Valmiki" loading="eager" />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about" class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-wrapper">
+
+        <!-- IMAGE -->
+        <div class="about-image">
+
+          <img src="images/about.jpg" alt="About Sahil" loading="lazy" />
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="about-content glass">
+
+          <h3>
+            Passionate Frontend Developer
+          </h3>
+
+          <p>
+
+            I'm Sahil Valmiki, a frontend
+            developer focused on creating
+            modern, clean and responsive
+            user interfaces.
+
+          </p>
+
+          <p>
+
+            I enjoy building expressive
+            websites with smooth user
+            experience and modern design.
+
+          </p>
+
+          <div class="info-grid">
+
+            <div>
+              <p>
+                <span>Name:</span>
+                Sahil Valmiki
+              </p>
+
+              <p>
+                <span>Age:</span>
+                21
+              </p>
             </div>
-            <div class="box">
-              <p><span> Email : </span> sahilkhare939@gmail.com</p>
-              <p><span> Place : </span> Gwalior, India - 474011</p>
+
+            <div>
+              <p>
+                <span>Email:</span>
+                sahilkhare939@gmail.com
+              </p>
+
+              <p>
+                <span>Location:</span>
+                Gwalior, India
+              </p>
             </div>
+
           </div>
-          <a href="images/Sahil_CV.pdf" target="_blank" class="button">View CV</a>
+
+          <a href="images/Sahil_CV.pdf" target="_blank" class="btn primary-btn">
+            View CV
+          </a>
 
         </div>
+
       </div>
+
     </div>
+
   </section>
-  <section class="skills" id="skills">
-    <div class="content">
-      <div class="title"><span>My Skills</span></div>
-      <div class="skills-details">
-        <div class="text">
-          <div class="topic">Skills Reflects Our Knowledge</div>
-          <p>Knowledge of web programming languages, including HTML, JavaScript, PHP and CSS. <br>
-            Strong analytical, problem-solving and troubleshooting skills. <br>
-            Familiarity with MySQL and MS Access for database design. <br>
-            Well-versed in multiple operating systems, including Windows, Unix, Linux and Mac. <br>
-            Programming Langauges- HTML5, JavaScript, Python and C.</p>
-          <div class="experience">
-            <div class="num">5</div>
-            <div class="exp">Years Of <br> Experience</div>
-          </div>
-        </div>
-        <div class="boxes">
-          <div class="box">
-            <div class="topic">HTML</div>
-            <div class="per">90%</div>
-          </div>
-          <div class="box">
-            <div class="topic">CSS</div>
-            <div class="per">80%</div>
-          </div>
-          <div class="box">
-            <div class="topic">JavScript</div>
-            <div class="per">70%</div>
-          </div>
-          <div class="box">
-            <div class="topic">PHP</div>
-            <div class="per">60%</div>
-          </div>
-        </div>
+
+  <!-- ================= SKILLS ================= -->
+
+  <section id="skills" class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
       </div>
-    </div>
-  </section>
-  <section class="services" id="services">
-    <div class="content">
-      <div class="title"><span>My Services</span></div>
-      <div class="boxes">
-        <div class="box">
-          <div class="icon">
-            <i class="fa-duotone fa-desktop"></i>
-          </div>
-          <div class="topic">Web Devlopment</div>
-          <p> I design and construct the websites and ensure that sites meet user expectations.</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fa-duotone fa-paint-brush"></i>
-          </div>
-          <div class="topic">Graphic Design</div>
-          <p>I create visual text & imagery and creative content for online campaigns, print ads, websites, and even
-            videos.</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fa-duotone fa-chart-line-up"></i>
-          </div>
-          <div class="topic">Digital Marketing</div>
-          <p>I maintain a brand’s online presence and sales by working on various marketing campaigns.</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fa-brands fa-android"></i>
-          </div>
-          <div class="topic">Icon Design</div>
-          <p>I design unique custom icon set for web and app.</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fa-duotone fa-camera-retro"></i>
-          </div>
-          <div class="topic">Photography</div>
-          <p>I maintain an in depth understanding of photographic best practices and procedures.</p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fa-duotone fa-tablet"></i>
-          </div>
-          <div class="topic">Apps Devlopment</div>
-          <p>I design & build advanced apps for the Android platform and implement new technologies to maximize
-            development efficiency.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="mywork" id="mywork">
-    <div class="content">
-      <div class="title"><span>My Work</span></div>
-      <div class="work-list">
-        <div class="work">
-          <p>Calculator App</p>
-          <a href="https://play.google.com/store/apps/details?id=com.google.android.calculator"><img
-              src="images/work-1.png"></a>
-        </div>
-        <div class="work">
-          <p>Music App</p>
-          <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music"><img
-              src="images/work-2.png"></a>
-        </div>
-        <div class="work">
-          <p>Notes App</p>
-          <a href="https://play.google.com/store/apps/details?id=com.google.android.keep"><img
-              src="images/work-3.png"></a>
-        </div>
-        <div class="work">
-          <p>News App</p>
-          <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.magazines"><img
-              src="images/work-4.png"></a>
-        </div>
-      </div>
-  </section>
-  <section class="contact" id="contact">
-    <div class="content">
-      <div class="title"><span>Contact Me</span></div>
-      <div class="contact-details">
-        <div class="left">
-          <img src="images/contact.jpg">
-          <div>
-            <ul class="info">
-              <li>
-                <i class="fa-duotone fa-location-dot"></i>
-                <span><a href="https://goo.gl/maps/FRs9S7gycKV9Vipk7" target="_blank">Shivaji
-                    Nagar, Thatipur, Gwalior, 474011</a></span>
-                </span>
 
-              </li>
-              <li>
-                <i class="fa-duotone fa-envelope"></i>
-                <span><a href="Mailto: Sahilkhare939@gmail.com">sahilkhare939@gmail.com</a></span>
-              </li>
-              <li>
-                <i class="fa-duotone fa-phone"></i>
-                <span><a href="Tel:9399006710">+91-939-900-6710</a></span>
-              </li>
+      <div class="skills-wrapper">
 
-            </ul>
+        <!-- LEFT -->
+        <div class="skills-text glass">
+
+          <h3>
+            Skills Reflect Knowledge
+          </h3>
+
+          <p>
+
+            Experienced in HTML, CSS,
+            JavaScript and responsive
+            web development.
+
+          </p>
+
+          <div class="experience-box">
+
+            <h4>5+</h4>
+
+            <p>Years Experience</p>
+
           </div>
-          <ul class="sci">
-            <li><a href="https://www.facebook.com/sahil.khare.90226"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="https://www.instagram.com/sahil.khare.90226"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.twitter.com/sahil.khare.90226"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/sahil.khare.90226"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/sahilkhare9"><i class="fa-brands fa-github"></i></a></li>
 
-          </ul>
         </div>
-        <div class="right">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Name" required>
 
-            <input type="email" name="Email" placeholder="Email" required>
-            <input type="phone" name="Phone" placeholder="Phone" required>
-            <textarea name="Message" rows="6" placeholder="Message"></textarea>
-            <div class="btn1">
-              <button type="submit">
-                Send<i class="fa-duotone fa-paper-plane"></i></button>
+        <!-- RIGHT -->
+        <div class="skill-bars">
+
+          <!-- HTML -->
+          <div class="skill">
+
+            <div class="skill-header">
+
+              <span>HTML</span>
+
+              <span>90%</span>
+
             </div>
-          </form>
+
+            <div class="progress-bar">
+              <div class="progress html"></div>
+            </div>
+
+          </div>
+
+          <!-- CSS -->
+          <div class="skill">
+
+            <div class="skill-header">
+
+              <span>CSS</span>
+
+              <span>85%</span>
+
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress css"></div>
+            </div>
+
+          </div>
+
+          <!-- JS -->
+          <div class="skill">
+
+            <div class="skill-header">
+
+              <span>JavaScript</span>
+
+              <span>75%</span>
+
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress js"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+
+  <section id="services" class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Services</h2>
+      </div>
+
+      <div class="service-grid">
+
+        <!-- CARD -->
+        <div class="service-card glass">
+
+          <i class="fa-solid fa-code"></i>
+
+          <h3>Web Development</h3>
+
+          <p>
+            Modern responsive website
+            development with clean code.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card glass">
+
+          <i class="fa-solid fa-pen-ruler"></i>
+
+          <h3>UI / UX Design</h3>
+
+          <p>
+            Beautiful and user-friendly
+            interface design systems.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card glass">
+
+          <i class="fa-solid fa-mobile-screen"></i>
+
+          <h3>Responsive Design</h3>
+
+          <p>
+            Mobile-first layouts with
+            smooth experience.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= WORK ================= -->
+
+  <section id="work" class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="work-grid">
+
+        <!-- PROJECT -->
+        <div class="work-card glass">
+
+          <img src="images/work-1.png" alt="Project" loading="lazy" />
+
+          <h4>Calculator App</h4>
+
+        </div>
+
+        <!-- PROJECT -->
+        <div class="work-card glass">
+
+          <img src="images/work-2.png" alt="Project" loading="lazy" />
+
+          <h4>Music App</h4>
+
+        </div>
+
+        <!-- PROJECT -->
+        <div class="work-card glass">
+
+          <img src="images/work-3.png" alt="Project" loading="lazy" />
+
+          <h4>Notes App</h4>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact" class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <!-- LEFT -->
+        <div class="contact-info">
+
+          <h3>
+            Let's Work Together
+          </h3>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            sahilkhare939@gmail.com
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +91 9399006710
+          </p>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Gwalior, India
+          </p>
+
+        </div>
+
+        <!-- RIGHT -->
+        <form name="submit-to-google-sheet" class="contact-form glass">
+
+          <input type="text" name="Name" placeholder="Your Name" required />
+
+          <input type="email" name="Email" placeholder="Your Email" required />
+
+          <textarea rows="6" name="Message" placeholder="Your Message"></textarea>
+
+          <button type="submit" class="btn primary-btn">
+            Send Message
+          </button>
+
           <span id="msg"></span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="text">
-      <span>Created By <i class="fas fa-heart fa-beat"></i> Sahil Valmiki</span>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>var typed = new Typed(".typing-text", {
-      strings: ["Web designing", "UI/UX designing", "Android development", "Web development"],
-      loop: true,
-      typeSpeed: 60,
-      backSpeed: 25,
-      backDelay: 500,
-    })</script>
-</body>
 
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- MOBILE BOTTOM NAV -->
+
+  <div class="mobile-bottom-nav">
+
+    <a href="#home" class="active">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="#about">
+      <i class="fa-solid fa-user"></i>
+      <span>About</span>
+    </a>
+
+    <a href="#skills">
+      <i class="fa-solid fa-code"></i>
+      <span>Skills</span>
+    </a>
+
+    <a href="#work">
+      <i class="fa-solid fa-briefcase"></i>
+      <span>Work</span>
+    </a>
+
+    <a href="#contact">
+      <i class="fa-solid fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+
+  </div>
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <p>
+      © 2026 Sahil Valmiki.
+      All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <!-- Typed JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
 
 </html>
